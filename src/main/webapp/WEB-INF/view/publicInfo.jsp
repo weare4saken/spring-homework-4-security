@@ -14,14 +14,14 @@
 
 <security:authorize access="hasAnyRole('IT', 'STUFF', 'DIRECTOR')">
 <p><input type="button" value="Серверная"
-       onclick="window.location.href = 'itInfo'">
+       onclick="window.location.href = 'it'">
 Вход разрешен: айтишникам, охране и директору</p>
 </security:authorize>
 <br>
 
 <security:authorize access="hasAnyRole('STUFF', 'DIRECTOR')">
 <p><input type="button" value="Комната охраны"
-       onclick="window.location.href = 'stuffInfo'">
+       onclick="window.location.href = 'stuff'">
 Вход разрешен: охране и директору</p>
 </security:authorize>
 <br>
@@ -29,7 +29,7 @@
 
 <security:authorize access="hasRole('DIRECTOR')">
 <p><input type="button" value="Кабинет начальства"
-       onclick="window.location.href = 'directorInfo'">
+       onclick="window.location.href = 'director'">
 Вход разрешен: только директору</p>
 </security:authorize>
 
