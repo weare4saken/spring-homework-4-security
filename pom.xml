@@ -4,6 +4,10 @@
   <groupId>weare4saken</groupId>
   <artifactId>SpringSecurityHomework</artifactId>
   <packaging>war</packaging>
+  <properties>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+  </properties>
   <version>1.0-SNAPSHOT</version>
   <name>SpringSecurityHomework Maven Webapp</name>
   <url>http://maven.apache.org</url>
@@ -45,6 +49,14 @@
       <artifactId>spring-security-config</artifactId>
       <version>5.8.1</version>
     </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-taglibs -->
+    <dependency>
+      <groupId>org.springframework.security</groupId>
+      <artifactId>spring-security-taglibs</artifactId>
+      <version>5.8.1</version>
+    </dependency>
+
 
   </dependencies>
 

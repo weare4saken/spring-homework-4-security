@@ -10,13 +10,13 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @Configuration
 @ComponentScan(basePackages = "weare4saken")
 @EnableWebMvc
-public class Config {
+public class ConfigNew {
 
     @Bean
     public ViewResolver getViewResolver() {
 
         InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
-        viewResolver.setPrefix("/WEB_INF/view/");
+        viewResolver.setPrefix("/WEB-INF/view/");
         viewResolver.setSuffix(".jsp");
 
         return viewResolver;
